@@ -15,14 +15,14 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
   </head>
-  <body>
+  <body class='loader'>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-default techfont custom-navbar">
       <div class="container">
         <ul class="nav navbar-nav">
-          <li><a class="navbar-brand bigbrand" href="{% url post_list %}"></a></li>
-          <li><a href="{% url about %}">About</a></li>
+          <li><a class="navbar-brand bigbrand" href="{% url 'post_list' %}"></a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="https://www.github.com/kudeh">Github</a></li>
           <li><a href="https://www.linkedin.com/kudeh">LinkedIn</a></li>
         </ul>
@@ -55,7 +55,9 @@
       <div class="row">
         <div class="col-md-8">
           <div class="blog_posts">
-            {% block body_block %}
+            {% block content %}
+
+            {% endblock %}
           </div>
         </div>
       </div>
