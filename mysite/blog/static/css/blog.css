@@ -19,6 +19,28 @@
 
 }
 
+.postdate{
+   text-align: center;
+}
+
+.posttitle {
+  font-size: 3em;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+}
+
+.postcontent {
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+}
+
+.btn-comment {
+  position: absolute;
+  right: 0px;
+}
+
+/* COLOR CHANGER BELOW */
+
 @keyframes spinify {
   0% {
     transform: translate(0px,0px);

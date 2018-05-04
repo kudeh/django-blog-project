@@ -42,14 +42,14 @@ class DraftListView(LoginRequiredMixin, ListView):
     model = Post
 
     def get_queryset(self):
-        return Post.objects.filter(published_date__isnull=True).orderby('created_date')
+        return Post.objects.filter(published_date__isnull=True).order_by('created_date')
 
 #####################################################
 @login_required
 def add_comment_to_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.method == 'POST':
-        form = CommentForm(request.Post)
+        form = CommentForm(request.POST)
         if form.is_valid():
             comment = form.save(commit=False)
             comment.post = post

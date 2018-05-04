@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <title>Blog</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Medium Style Editor -->
     <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
@@ -27,7 +29,7 @@
           <li><a href="https://www.linkedin.com/kudeh">LinkedIn</a></li>
         </ul>
 
-        <ul class='nav navbar-navb navbar-right'>
+        <ul class='nav navbar-nav navbar-right'>
           {% if user.is_authenticated %}
             <li>
               <a href="{% url 'post_new' %}">New Post</a>
